@@ -3,9 +3,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { VariantProps } from "class-variance-authority";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   const { ref: heroRef, inView: heroInView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -150,7 +151,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold">Get in Touch</CardTitle>
                 <CardDescription>
-                  We'd love to hear from you
+                  We&apos;d love to hear from you
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -218,7 +219,7 @@ export default function Home() {
                 transition={{ delay: i * 0.05 }}
               >
                 <Button
-                  variant={btn.variant as any}
+                  variant={btn.variant as VariantProps<typeof buttonVariants>["variant"]}
                   size="lg"
                   className="w-full"
                 >

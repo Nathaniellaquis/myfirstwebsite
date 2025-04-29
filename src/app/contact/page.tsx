@@ -15,7 +15,7 @@ export default function ContactPage() {
                             Get In Touch
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                            We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
                         </p>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
                             <CardHeader className="text-center">
                                 <CardTitle className="text-2xl font-bold">Send Us a Message</CardTitle>
                                 <CardDescription>
-                                    We'll get back to you as soon as possible
+                                    We&apos;ll get back to you as soon as possible
                                 </CardDescription>
                             </CardHeader>
                             <CardContent className="space-y-4">
